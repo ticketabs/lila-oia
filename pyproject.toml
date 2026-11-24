@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lila-oia"
+version = "1.0.0"
+description = "Standalone Owner Identity & Challenge-Bound Authentication (Argon2id + AES-256-GCM)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "AGPL-3.0-only"}
+authors = [{name = "TicketLabs (Harboria Labs)"}]
+dependencies = ["argon2-cffi>=23.1.0", "cryptography>=42.0.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
